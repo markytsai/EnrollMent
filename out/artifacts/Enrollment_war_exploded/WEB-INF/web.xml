@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0"
+         xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+	http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+    <display-name></display-name>
+
+
+    <listener>
+        <listener-class>com.tjzhic.listener.MyServletContextListener</listener-class>
+
+    </listener>
+
+    <listener>
+        <listener-class>com.tjzhic.listener.CountListener</listener-class>
+    </listener>
+
+
+    <filter>
+        <filter-name>EncodeFilter</filter-name>
+        <filter-class>com.tjzhic.filter.EncodeFilter</filter-class>
+    </filter>
+
+    <filter>
+        <filter-name>StuFilter</filter-name>
+        <filter-class>com.tjzhic.filter.StuFilter</filter-class>
+    </filter>
+
+    <filter>
+        <filter-name>AdminFilter</filter-name>
+        <filter-class>com.tjzhic.filter.AdminFilter</filter-class>
+    </filter>
+
+    <filter>
+        <filter-name>ZAdminFilter</filter-name>
+        <filter-class>com.tjzhic.filter.ZAdminFilter</filter-class>
+    </filter>
+
+    <filter>
+        <filter-name>JAdminFilter</filter-name>
+        <filter-class>com.tjzhic.filter.JAdminFilter</filter-class>
+    </filter>
+
+    <filter>
+        <filter-name>SAdminFilter</filter-name>
+        <filter-class>com.tjzhic.filter.SAdminFilter</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>EncodeFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+
+    <filter-mapping>
+        <filter-name>StuFilter</filter-name>
+        <url-pattern>/stu/*</url-pattern>
+        <url-pattern>/includes/stu/*</url-pattern>
+    </filter-mapping>
+
+    <filter-mapping>
+        <filter-name>AdminFilter</filter-name>
+        <url-pattern>/admin/*</url-pattern>
+        <url-pattern>/includes/admin/*</url-pattern>
+    </filter-mapping>
+
+    <filter-mapping>
+        <filter-name>ZAdminFilter</filter-name>
+        <url-pattern>/zadmin/*</url-pattern>
+    </filter-mapping>
+
+    <filter-mapping>
+        <filter-name>JAdminFilter</filter-name>
+        <url-pattern>/jadmin/*</url-pattern>
+    </filter-mapping>
+
+    <filter-mapping>
+        <filter-name>SAdminFilter</filter-name>
+        <url-pattern>/sadmin/*</url-pattern>
+    </filter-mapping>
+
+    <!--************学生映射文件************-->
+
+    <servlet>
+        <servlet-name>StuRegister</servlet-name>
+        <servlet-class>com.tjzhic.servlet.StuRegister</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>StuLogin</servlet-name>
+        <servlet-class>com.tjzhic.servlet.StuLogin</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>StuLogout</servlet-name>
+        <servlet-class>com.tjzhic.servlet.StuLogout</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>StuPass</servlet-name>
+        <servlet-class>com.tjzhic.servlet.StuPass</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>StuRecord</servlet-name>
+        <servlet-class>com.tjzhic.servlet.StuRecord</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>StuNotice</servlet-name>
+        <servlet-class>com.tjzhic.servlet.StuNotice</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>StuEntry</servlet-name>
+        <servlet-class>com.tjzhic.servlet.StuEntry</servlet-class>
+    </servlet>
+
+    <!--<servlet>-->
+    <!--<servlet-name>StuPhoto</servlet-name>-->
+    <!--<servlet-class>com.tjzhic.servlet.StuPhoto</servlet-class>-->
+    <!--</servlet>-->
+
+    <!--<servlet>-->
+    <!--<servlet-name>StuForm</servlet-name>-->
+    <!--<servlet-class>com.tjzhic.servlet.StuForm</servlet-class>-->
+    <!--</servlet>-->
+
+    <!--<servlet>-->
+    <!--<servlet-name>StuCard</servlet-name>-->
+    <!--<servlet-class>com.tjzhic.servlet.StuCard</servlet-class>-->
+    <!--</servlet>-->
+
+    <!--<servlet>-->
+    <!--<servlet-name>StuGrade</servlet-name>-->
+    <!--<servlet-class>com.tjzhic.servlet.StuGrade</servlet-class>-->
+    <!--</servlet>-->
+
+
+    <!--****************管理员配置映射*****************-->
+    <servlet>
+        <servlet-name>AdminLogin</servlet-name>
+        <servlet-class>com.tjzhic.servlet.AdminLogin</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>AdminLogout</servlet-name>
+        <servlet-class>com.tjzhic.servlet.AdminLogout</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>AdminRecord</servlet-name>
+        <servlet-class>com.tjzhic.servlet.AdminRecord</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>AdminPass</servlet-name>
+        <servlet-class>com.tjzhic.servlet.AdminPass</servlet-class>
+    </servlet>
+
+    <!--<servlet>-->
+    <!--<servlet-name>AdminState</servlet-name>-->
+    <!--<servlet-class>com.tjzhic.servlet.AdminState</servlet-class>-->
+    <!--</servlet>-->
+
+    <servlet>
+        <servlet-name>SAdminManage</servlet-name>
+        <servlet-class>com.tjzhic.servlet.SAdminManage</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>SAdminDb</servlet-name>
+        <servlet-class>com.tjzhic.servlet.SAdminDb</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>AdminReginfoManage</servlet-name>
+        <servlet-class>com.tjzhic.servlet.AdminReginfoManage</servlet-class>
+    </servlet>
+
+    <servlet>
+    <servlet-name>JAdminGradeInput</servlet-name>
+    <servlet-class>com.tjzhic.servlet.JAdminGradeInput</servlet-class>
+    </servlet>
+
+    <!--<servlet>-->
+    <!--<servlet-name>AdminGrade</servlet-name>-->
+    <!--<servlet-class>com.tjzhic.servlet.AdminGrade</servlet-class>-->
+    <!--</servlet>-->
+
+    <servlet>
+    <servlet-name>JAdminCardNum</servlet-name>
+    <servlet-class>com.tjzhic.servlet.JAdminCardNum</servlet-class>
+    </servlet>
+
+    <servlet>
+    <servlet-name>JAdminRoom</servlet-name>
+    <servlet-class>com.tjzhic.servlet.JAdminRoom</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>ZAdminConfirm</servlet-name>
+        <servlet-class>com.tjzhic.servlet.ZAdminConfirm</servlet-class>
+    </servlet>
+
+    <!--<servlet>-->
+    <!--<servlet-name>ZAdminLine</servlet-name>-->
+    <!--<servlet-class>com.tjzhic.servlet.ZAdminLine</servlet-class>-->
+    <!--</servlet>-->
+
+    <servlet>
+        <servlet-name>ZAdminStuManage</servlet-name>
+        <servlet-class>com.tjzhic.servlet.ZAdminStuManage</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>ZAdminRelease</servlet-name>
+        <servlet-class>com.tjzhic.servlet.ZAdminRelease</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>ZAdminStageSet</servlet-name>
+        <servlet-class>com.tjzhic.servlet.ZAdminStageSet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>SAdminStageAdd</servlet-name>
+        <servlet-class>com.tjzhic.servlet.SAdminStageAdd</servlet-class>
+    </servlet>
+    <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+    <!--************学生映射文件************-->
+
+    <servlet-mapping>
+        <servlet-name>StuRegister</servlet-name>
+        <url-pattern>/register.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>StuLogin</servlet-name>
+        <url-pattern>/login.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>StuLogout</servlet-name>
+        <url-pattern>/stu/logout.do</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet-mapping>
+        <servlet-name>StuPass</servlet-name>
+        <url-pattern>/stu/pass.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>StuRecord</servlet-name>
+        <url-pattern>/stu/record.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>StuNotice</servlet-name>
+        <url-pattern>/stu/notice.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>StuEntry</servlet-name>
+        <url-pattern>/stu/entry.do</url-pattern>
+    </servlet-mapping>
+
+    <!--<servlet-mapping>-->
+    <!--<servlet-name>StuPhoto</servlet-name>-->
+    <!--<url-pattern>/stu/photo.do</url-pattern>-->
+    <!--</servlet-mapping>-->
+
+    <!--<servlet-mapping>-->
+    <!--<servlet-name>StuForm</servlet-name>-->
+    <!--<url-pattern>/stu/form.do</url-pattern>-->
+    <!--</servlet-mapping>-->
+
+    <!--<servlet-mapping>-->
+    <!--<servlet-name>StuCard</servlet-name>-->
+    <!--<url-pattern>/stu/card.do</url-pattern>-->
+    <!--</servlet-mapping>-->
+
+    <!--<servlet-mapping>-->
+    <!--<servlet-name>StuGrade</servlet-name>-->
+    <!--<url-pattern>/stu/grade.do</url-pattern>-->
+    <!--</servlet-mapping>-->
+
+
+    <!--************管理员映射文件************-->
+
+    <servlet-mapping>
+        <servlet-name>AdminLogin</servlet-name>
+        <url-pattern>/adminLogin.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>AdminLogout</servlet-name>
+        <url-pattern>/admin/logout.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>AdminRecord</servlet-name>
+        <url-pattern>/admin/record.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>AdminPass</servlet-name>
+        <url-pattern>/admin/pass.do</url-pattern>
+    </servlet-mapping>
+
+    <!--<servlet-mapping>-->
+    <!--<servlet-name>AdminState</servlet-name>-->
+    <!--<url-pattern>/admin/state.do</url-pattern>-->
+    <!--</servlet-mapping>-->
+
+    <servlet-mapping>
+        <servlet-name>SAdminManage</servlet-name>
+        <url-pattern>/sadmin/manage.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>SAdminDb</servlet-name>
+        <url-pattern>/sadmin/db.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>AdminReginfoManage</servlet-name>
+        <url-pattern>/admin/reginfomanage.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+    <servlet-name>JAdminGradeInput</servlet-name>
+    <url-pattern>/jadmin/gradeinput.do</url-pattern>
+    </servlet-mapping>
+
+    <!--<servlet-mapping>-->
+    <!--<servlet-name>AdminGrade</servlet-name>-->
+    <!--<url-pattern>/admin/grade.do</url-pattern>-->
+    <!--</servlet-mapping>-->
+
+    <servlet-mapping>
+    <servlet-name>JAdminCardNum</servlet-name>
+    <url-pattern>/jadmin/cardnum.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+    <servlet-name>JAdminRoom</servlet-name>
+    <url-pattern>/jadmin/room.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ZAdminConfirm</servlet-name>
+        <url-pattern>/zadmin/confirm.do</url-pattern>
+    </servlet-mapping>
+    <!--<servlet-mapping>-->
+    <!--<servlet-name>ZAdminLine</servlet-name>-->
+    <!--<url-pattern>/zadmin/line.do</url-pattern>-->
+    <!--</servlet-mapping>-->
+
+    <servlet-mapping>
+        <servlet-name>ZAdminStuManage</servlet-name>
+        <url-pattern>/zadmin/stumanage.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ZAdminRelease</servlet-name>
+        <url-pattern>/zadmin/release.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ZAdminStageSet</servlet-name>
+        <url-pattern>/zadmin/stageset.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SAdminStageAdd</servlet-name>
+        <url-pattern>/sadmin/stageadd.do</url-pattern>
+    </servlet-mapping>
+
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+
+    <!--database JNDI name configuration -->
+    <!--<env-entry>-->
+    <!--<env-entry-name>JNDIname</env-entry-name>-->
+    <!--<env-entry-type>java.lang.String</env-entry-type>-->
+    <!--<env-entry-value>jdbc/bkxt</env-entry-value>-->
+    <!--</env-entry>-->
+
+    <resource-ref>
+        <description>DB Connection</description>
+        <res-ref-name>jdbc/bkxt</res-ref-name>
+        <res-type>javax.sql.DataSource</res-type>
+        <res-auth>Container</res-auth>
+    </resource-ref>
+</web-app>
