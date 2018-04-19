@@ -22,7 +22,6 @@ public class ConnectionFactory {
         try {
             final String url = "jdbc:mysql://localhost:3306/bkxt";
             Class.forName("com.mysql.jdbc.Driver");
-            System.out.println("成功加载MySQL驱动！");
             Connection conn;
             conn = DriverManager.getConnection(url, "root", "caizhenya1997");
             //创建一个Statement对象

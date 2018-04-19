@@ -21,9 +21,9 @@
 			<h1>${title}</h1>
 			<%@ include file="../includes/admin/hmenu.jsp"%>
 			
-			<div class="operation">已定义阶段列表↓：
+			<div class="operation"><!--已定义阶段列表↓：-->
 				<span class="mess">
-					<c:if test="${'stageDeleteMess' eq sessionScope.mess.name}">${sessionScope.mess.content}</c:if>
+					<%--<c:if test="${'stageDeleteMess' eq sessionScope.mess.name}">${sessionScope.mess.content}</c:if>--%>
 				</span>
 			</div>
 			<table class="dt" border="0" cellspacing="1">

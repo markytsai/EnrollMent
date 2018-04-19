@@ -34,13 +34,14 @@ public class MyServletContextListener implements ServletContextListener,
         CurrstageDao currstageDao = new CurrstageDaoImpl();
 
         School school = schoolDao.getSchool();
-
+        System.out.println("---------" + school.getShname());
         ArrayList<Major> majors = majorDao.findAll();
         ArrayList<Course> courses = courseDao.findAll();
         ArrayList<Stage> stage = stageDao.findAll();
         Currstage currstage = currstageDao.findCurrent();
 
         sce.getServletContext().setAttribute("school", school);
+
         sce.getServletContext().setAttribute("majors", majors);
         sce.getServletContext().setAttribute("courses", courses);
         sce.getServletContext().setAttribute("stages", stage);

@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import com.tjzhic.dao.StageDao;
 import com.tjzhic.db.ConnectionFactory;
 import com.tjzhic.entity.Stage;
+import org.junit.Test;
 
 public class StageDaoImpl implements StageDao {
 
@@ -39,6 +40,19 @@ public class StageDaoImpl implements StageDao {
             }
         }
         return rows;
+    }
+
+    @Test
+    public void testAddStage() {
+        Stage stage = new Stage();
+        stage.setStagenum(9);
+        stage.setStagename("9");
+        stage.setStarttime("9");
+        stage.setEndtime("9");
+        stage.setNote("9");
+        int row = add(stage);
+        int a = 0;
+        int b = 0;
     }
 
     @Override

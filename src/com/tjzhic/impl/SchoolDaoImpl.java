@@ -60,6 +60,7 @@ public class SchoolDaoImpl implements SchoolDao {
                 school.setShtest(rs.getString(6));
                 school.setShyear(rs.getString(7));
             }
+            System.out.println(school.toString());
         } catch (Exception e) {
             e.printStackTrace();
         } finally {

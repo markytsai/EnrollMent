@@ -117,25 +117,25 @@
         <servlet-class>com.tjzhic.servlet.StuEntry</servlet-class>
     </servlet>
 
-    <!--<servlet>-->
-    <!--<servlet-name>StuPhoto</servlet-name>-->
-    <!--<servlet-class>com.tjzhic.servlet.StuPhoto</servlet-class>-->
-    <!--</servlet>-->
+    <servlet>
+        <servlet-name>StuPhoto</servlet-name>
+        <servlet-class>com.tjzhic.servlet.StuPhoto</servlet-class>
+    </servlet>
 
-    <!--<servlet>-->
-    <!--<servlet-name>StuForm</servlet-name>-->
-    <!--<servlet-class>com.tjzhic.servlet.StuForm</servlet-class>-->
-    <!--</servlet>-->
+    <servlet>
+        <servlet-name>StuForm</servlet-name>
+        <servlet-class>com.tjzhic.servlet.StuForm</servlet-class>
+    </servlet>
 
-    <!--<servlet>-->
-    <!--<servlet-name>StuCard</servlet-name>-->
-    <!--<servlet-class>com.tjzhic.servlet.StuCard</servlet-class>-->
-    <!--</servlet>-->
+    <servlet>
+        <servlet-name>StuCard</servlet-name>
+        <servlet-class>com.tjzhic.servlet.StuCard</servlet-class>
+    </servlet>
 
-    <!--<servlet>-->
-    <!--<servlet-name>StuGrade</servlet-name>-->
-    <!--<servlet-class>com.tjzhic.servlet.StuGrade</servlet-class>-->
-    <!--</servlet>-->
+    <servlet>
+        <servlet-name>StuGrade</servlet-name>
+        <servlet-class>com.tjzhic.servlet.StuGrade</servlet-class>
+    </servlet>
 
 
     <!--****************管理员配置映射*****************-->
@@ -159,10 +159,10 @@
         <servlet-class>com.tjzhic.servlet.AdminPass</servlet-class>
     </servlet>
 
-    <!--<servlet>-->
-    <!--<servlet-name>AdminState</servlet-name>-->
-    <!--<servlet-class>com.tjzhic.servlet.AdminState</servlet-class>-->
-    <!--</servlet>-->
+    <servlet>
+        <servlet-name>AdminState</servlet-name>
+        <servlet-class>com.tjzhic.servlet.AdminState</servlet-class>
+    </servlet>
 
     <servlet>
         <servlet-name>SAdminManage</servlet-name>
@@ -180,23 +180,23 @@
     </servlet>
 
     <servlet>
-    <servlet-name>JAdminGradeInput</servlet-name>
-    <servlet-class>com.tjzhic.servlet.JAdminGradeInput</servlet-class>
-    </servlet>
-
-    <!--<servlet>-->
-    <!--<servlet-name>AdminGrade</servlet-name>-->
-    <!--<servlet-class>com.tjzhic.servlet.AdminGrade</servlet-class>-->
-    <!--</servlet>-->
-
-    <servlet>
-    <servlet-name>JAdminCardNum</servlet-name>
-    <servlet-class>com.tjzhic.servlet.JAdminCardNum</servlet-class>
+        <servlet-name>JAdminGradeInput</servlet-name>
+        <servlet-class>com.tjzhic.servlet.JAdminGradeInput</servlet-class>
     </servlet>
 
     <servlet>
-    <servlet-name>JAdminRoom</servlet-name>
-    <servlet-class>com.tjzhic.servlet.JAdminRoom</servlet-class>
+        <servlet-name>AdminGrade</servlet-name>
+        <servlet-class>com.tjzhic.servlet.AdminGrade</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>JAdminCardNum</servlet-name>
+        <servlet-class>com.tjzhic.servlet.JAdminCardNum</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>JAdminRoom</servlet-name>
+        <servlet-class>com.tjzhic.servlet.JAdminRoom</servlet-class>
     </servlet>
 
     <servlet>
@@ -204,10 +204,10 @@
         <servlet-class>com.tjzhic.servlet.ZAdminConfirm</servlet-class>
     </servlet>
 
-    <!--<servlet>-->
-    <!--<servlet-name>ZAdminLine</servlet-name>-->
-    <!--<servlet-class>com.tjzhic.servlet.ZAdminLine</servlet-class>-->
-    <!--</servlet>-->
+    <servlet>
+        <servlet-name>ZAdminLine</servlet-name>
+        <servlet-class>com.tjzhic.servlet.ZAdminLine</servlet-class>
+    </servlet>
 
     <servlet>
         <servlet-name>ZAdminStuManage</servlet-name>
@@ -267,25 +267,25 @@
         <url-pattern>/stu/entry.do</url-pattern>
     </servlet-mapping>
 
-    <!--<servlet-mapping>-->
-    <!--<servlet-name>StuPhoto</servlet-name>-->
-    <!--<url-pattern>/stu/photo.do</url-pattern>-->
-    <!--</servlet-mapping>-->
+    <servlet-mapping>
+        <servlet-name>StuPhoto</servlet-name>
+        <url-pattern>/stu/photo.do</url-pattern>
+    </servlet-mapping>
 
-    <!--<servlet-mapping>-->
-    <!--<servlet-name>StuForm</servlet-name>-->
-    <!--<url-pattern>/stu/form.do</url-pattern>-->
-    <!--</servlet-mapping>-->
+    <servlet-mapping>
+        <servlet-name>StuForm</servlet-name>
+        <url-pattern>/stu/form.do</url-pattern>
+    </servlet-mapping>
 
-    <!--<servlet-mapping>-->
-    <!--<servlet-name>StuCard</servlet-name>-->
-    <!--<url-pattern>/stu/card.do</url-pattern>-->
-    <!--</servlet-mapping>-->
+    <servlet-mapping>
+        <servlet-name>StuCard</servlet-name>
+        <url-pattern>/stu/card.do</url-pattern>
+    </servlet-mapping>
 
-    <!--<servlet-mapping>-->
-    <!--<servlet-name>StuGrade</servlet-name>-->
-    <!--<url-pattern>/stu/grade.do</url-pattern>-->
-    <!--</servlet-mapping>-->
+    <servlet-mapping>
+        <servlet-name>StuGrade</servlet-name>
+        <url-pattern>/stu/grade.do</url-pattern>
+    </servlet-mapping>
 
 
     <!--************管理员映射文件************-->
@@ -310,10 +310,10 @@
         <url-pattern>/admin/pass.do</url-pattern>
     </servlet-mapping>
 
-    <!--<servlet-mapping>-->
-    <!--<servlet-name>AdminState</servlet-name>-->
-    <!--<url-pattern>/admin/state.do</url-pattern>-->
-    <!--</servlet-mapping>-->
+    <servlet-mapping>
+        <servlet-name>AdminState</servlet-name>
+        <url-pattern>/admin/state.do</url-pattern>
+    </servlet-mapping>
 
     <servlet-mapping>
         <servlet-name>SAdminManage</servlet-name>
@@ -331,33 +331,34 @@
     </servlet-mapping>
 
     <servlet-mapping>
-    <servlet-name>JAdminGradeInput</servlet-name>
-    <url-pattern>/jadmin/gradeinput.do</url-pattern>
-    </servlet-mapping>
-
-    <!--<servlet-mapping>-->
-    <!--<servlet-name>AdminGrade</servlet-name>-->
-    <!--<url-pattern>/admin/grade.do</url-pattern>-->
-    <!--</servlet-mapping>-->
-
-    <servlet-mapping>
-    <servlet-name>JAdminCardNum</servlet-name>
-    <url-pattern>/jadmin/cardnum.do</url-pattern>
+        <servlet-name>JAdminGradeInput</servlet-name>
+        <url-pattern>/jadmin/gradeinput.do</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
-    <servlet-name>JAdminRoom</servlet-name>
-    <url-pattern>/jadmin/room.do</url-pattern>
+        <servlet-name>AdminGrade</servlet-name>
+        <url-pattern>/admin/grade.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>JAdminCardNum</servlet-name>
+        <url-pattern>/jadmin/cardnum.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>JAdminRoom</servlet-name>
+        <url-pattern>/jadmin/room.do</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
         <servlet-name>ZAdminConfirm</servlet-name>
         <url-pattern>/zadmin/confirm.do</url-pattern>
     </servlet-mapping>
-    <!--<servlet-mapping>-->
-    <!--<servlet-name>ZAdminLine</servlet-name>-->
-    <!--<url-pattern>/zadmin/line.do</url-pattern>-->
-    <!--</servlet-mapping>-->
+
+    <servlet-mapping>
+        <servlet-name>ZAdminLine</servlet-name>
+        <url-pattern>/zadmin/line.do</url-pattern>
+    </servlet-mapping>
 
     <servlet-mapping>
         <servlet-name>ZAdminStuManage</servlet-name>

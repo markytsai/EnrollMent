@@ -11,11 +11,23 @@ import java.util.List;
  */
 public class PageModel<T> implements Serializable {
     private static final long serialVersionUID = 1L;
+
+    // 每页显示记录数
     private int pageSize = 10;
+
+    // 当前页次
     private int pageNo = 1;
+
+    // 记录总数
     private int recordCount = 0;
+
+    // 分页总数
     private int pageCount;
+
+    // 当前页记录集列表哦
     private List<T> data;
+
+    // 翻页导航的HTML实现
     private String pageNav;
 
     public PageModel(int pageSize, int pageNo, int recordCount) {

@@ -72,7 +72,7 @@ public class SAdminStageAdd extends HttpServlet {
             } else {
                 session.setAttribute("mess", new Message("stageAddMess", "添加阶段失败！"));
             }
-            response.sendRedirect(servletContext.getContextPath() + "/sadmin/stageadd.jsp#add");
+            response.sendRedirect(servletContext.getContextPath() + "/sadmin/stageadd.jsp");
             //删除系统阶段
         } else if ("stageDelete".equals(action)) {
             int stagenum = Integer.parseInt(request.getParameter("stagenum").toString());
