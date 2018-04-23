@@ -13,7 +13,7 @@ public class ConnectionFactory {
     }
 
     /**
-     * 通过web.xml的JNDIname参数配置创建连接
+     * 单利模式 创建工厂
      *
      * @return
      */

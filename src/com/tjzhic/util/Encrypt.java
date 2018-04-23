@@ -2,6 +2,9 @@ package com.tjzhic.util;
 
 import java.security.MessageDigest;
 
+/**
+ * MD5加密和SHA加密算法
+ */
 public class Encrypt {
 
     public final static String MD5(String s) {

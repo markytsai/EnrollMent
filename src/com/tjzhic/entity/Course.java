@@ -1,11 +1,20 @@
 package com.tjzhic.entity;
 
 public class Course {
-  private String ccode;         //课程代码
-  private String cname;         //课程名称
-  private String cmname;        //隶属专业
-  private String cstarttime;    //考试开始时间
-  private String cendtime;      //考试结束时间
+  // 课程代码
+  private String ccode;
+
+  // 课程名称
+  private String cname;
+
+  // 隶属专业
+  private String cmname;
+
+  // 考试开始时间
+  private String cstarttime;
+
+  // 考试结束时间
+  private String cendtime;
   
   public String getCcode() {
     return ccode;

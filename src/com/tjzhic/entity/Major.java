@@ -1,12 +1,23 @@
 package com.tjzhic.entity;
 
 public class Major {
-  private String mcode;     //专业代码
-  private String mname;     //专业名称
-  private int plannum;      //计划录取人数
-  private int applynum;     //实际报考人数
-  private int passscore;    //录取分数线
-  private int admitnum;     //实际录取人数
+  //专业代码
+  private String mcode;
+
+  //专业名称
+  private String mname;
+
+  //计划录取人数
+  private int plannum;
+
+  //实际报考人数
+  private int applynum;
+
+  //录取分数线
+  private int passscore;
+
+  //实际录取人数
+  private int admitnum;
  
   public String getMcode() {
     return mcode;

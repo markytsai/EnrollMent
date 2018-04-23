@@ -8,6 +8,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+/**
+ * 管理员推出登陆
+ */
 public class AdminLogout extends HttpServlet {
 
     /**

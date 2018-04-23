@@ -1,10 +1,21 @@
 package com.tjzhic.entity;
 public class Stu {
-  private int userid;               //用户ID
-  private String username;          //用户名
-  private String password;          //密码
-  private String regip;             //注册IP
-  private String regtime;           //注册时间
+  //用户ID
+  private int userid;
+
+  //用户名
+  private String username;
+
+  //密码
+  private String password;
+
+  //注册IP
+  private String regip;
+
+  //注册时间
+  private String regtime;
+
+
   public int getUserid() {
     return userid;
   }

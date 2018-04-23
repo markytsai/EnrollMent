@@ -21,6 +21,9 @@ import com.tjzhic.entity.School;
 import com.tjzhic.entity.SupGrade;
 import com.tjzhic.util.PageModel;
 
+/**
+ * 教务管理员发放校卡
+ */
 public class JAdminCardNum extends HttpServlet {
 
     /**

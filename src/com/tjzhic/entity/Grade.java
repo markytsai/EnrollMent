@@ -1,12 +1,24 @@
 package com.tjzhic.entity;
 
 public class Grade {
-  private int gardeid;          //成绩ID
-  private String testcardnum;   //准考证号
-  private String ccode;         //课程代码
-  private int score;            //成绩
-  private String note;          //备注：正常、缺考、作弊
-  private String status;        //状态标识：0：可录入  1：不可录入
+  // 成绩ID
+  private int gardeid;
+
+  // 准考证号
+  private String testcardnum;
+
+  // 课程代码
+  private String ccode;
+
+  // 成绩
+  private int score;
+
+  // 备注：正常、缺考、作弊
+  private String note;
+
+  // 状态标识：0：可录入  1：不可录入
+  private String status;
+
   public int getGardeid() {
     return gardeid;
   }

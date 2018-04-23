@@ -5,9 +5,6 @@ import java.util.List;
 
 /**
  * 分页模型类
- *
- * @param <T>
- * @author qiujy
  */
 public class PageModel<T> implements Serializable {
     private static final long serialVersionUID = 1L;

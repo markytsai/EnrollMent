@@ -1,10 +1,20 @@
 package com.tjzhic.entity;
 public class Record {
-  private int rid;          //记录ID
-  private String logname;   //用户名
-  private String usergroup; //用户组
-  private String logtime;   //登录时间
-  private String logip;     //登录ip
+  // 记录ID
+  private int rid;
+
+  // 用户名
+  private String logname;
+
+  // 用户组
+  private String usergroup;
+
+  // 登录时间
+  private String logtime;
+
+  // 登录ip
+  private String logip;
+
   public int getRid() {
     return rid;
   }

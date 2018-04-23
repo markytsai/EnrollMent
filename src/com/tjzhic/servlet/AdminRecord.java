@@ -14,6 +14,9 @@ import com.tjzhic.entity.Adminuser;
 import com.tjzhic.entity.Record;
 import com.tjzhic.util.PageModel;
 
+/**
+ * 管理员登陆历史记录
+ */
 public class AdminRecord extends HttpServlet {
 
     /**

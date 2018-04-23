@@ -34,7 +34,7 @@ public class EncodeFilter implements Filter {
 
     }
 
-    // 通过反射方法代理模式解决中文乱码问题
+    // 通过反射方法模式解决中文乱码问题
     private ServletRequest getHttpServletRequestProxy(final HttpServletRequest request) {
         ServletRequest proxy = (ServletRequest) Proxy.newProxyInstance(
                 EncodeFilter.class.getClassLoader(),

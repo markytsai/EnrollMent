@@ -19,6 +19,9 @@ import com.tjzhic.entity.Reginfo;
 import com.tjzhic.entity.School;
 import com.tjzhic.util.PageModel;
 
+/**
+ * 管理员历史记录管理
+ */
 public class AdminReginfoManage extends HttpServlet {
 
     /**

@@ -1,34 +1,91 @@
 package com.tjzhic.entity;
 
 public class Reginfo {
-  private int id;                   //记录ID
-  private int userid;               //用户ID
-  private String username;          //用户名
-  private String sname;             //姓名
-  private String idcode;            //身份证号
-  private String ssex;              //性别
-  private String nation;            //民族
-  private String political;         //政治面貌
-  private String birthday;          //生日
-  private String homeaddr;          //家庭住址
-  private String source;            //生源地
-  private String school;            //毕业学校
-  private String gradutetime;       //毕业时间
-  private String isnew;             //应往届
-  private String aos;               //文理科
-  private String major;             //原专业
-  private String cet;               //英语水平
-  private String mname;             //报考专业
-  private String piclocation;       //照片位置
-  private String mobile;            //手机号
-  private String telphone;          //联系电话
-  private String zipcode;           //邮编
-  private String conaddr;           //联系地址
-  private String receiver;          //接收人
-  private int isconfirm;            //是否缴费确认 0：未确认 1：已确认
-  private String testcardnum;       //准考证号
-  private String examroom;          //考场号
-  private String seatnum;           //座位号
+  //记录ID
+  private int id;
+
+  //用户ID
+  private int userid;
+
+  //用户名
+  private String username;
+
+  //姓名
+  private String sname;
+
+  //身份证号
+  private String idcode;
+
+  //性别
+  private String ssex;
+
+  //民族
+  private String nation;
+
+  //政治面貌
+  private String political;
+
+  //生日
+  private String birthday;
+
+  //家庭住址
+  private String homeaddr;
+
+  //生源地
+  private String source;
+
+  //毕业学校
+  private String school;
+
+  //毕业时间
+  private String gradutetime;
+
+  //应往届
+  private String isnew;
+
+  //文理科
+  private String aos;
+
+  //原专业
+  private String major;
+
+  //英语水平
+  private String cet;
+
+  //报考专业
+  private String mname;
+
+  //照片位置
+  private String piclocation;
+
+  //手机号
+  private String mobile;
+
+  //联系电话
+  private String telphone;
+
+  //邮编
+  private String zipcode;
+
+  //联系地址
+  private String conaddr;
+
+  //接收人
+  private String receiver;
+
+  //是否缴费确认 0：未确认 1：已确认
+  private int isconfirm;
+
+  //准考证号
+  private String testcardnum;
+
+  //考场号
+  private String examroom;
+
+  // 座位号
+  private String seatnum;
+
+
   public int getId() {
     return id;
   }

@@ -1,13 +1,26 @@
 package com.tjzhic.entity;
 
 public class School {
-    private String shcode;    //学校代码
-    private String shname;    //学校名称
-    private String shaddr;    //学校地址
-    private String shzip;     //邮编
-    private String shtel;     //联系电话
-    private String shtest;    //考试名称
-    private String shyear;    //考试年份
+    //学校代码
+    private String shcode;
+
+    //学校名称
+    private String shname;
+
+    //学校地址
+    private String shaddr;
+
+    //邮编
+    private String shzip;
+
+    //联系电话
+    private String shtel;
+
+    //考试名称
+    private String shtest;
+
+    //考试年份
+    private String shyear;
 
     public String getShcode() {
         return shcode;

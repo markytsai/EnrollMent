@@ -6,7 +6,11 @@ import com.tjzhic.entity.SupGrade;
 import com.tjzhic.util.PageModel;
 
 public interface RecordDao {
+
+  // 添加登陆记录
   public int add(Record record);
+
+  //
   public PageModel<Record> pageByLogname(String logname,String usergroup,int pageSize, int pageNo);
   public PageModel<SupGrade> pageByLogname(int pageSize,int pageNo);
   public PageModel<Reginfo> pageReginfo(int pageSize,int pageNo);

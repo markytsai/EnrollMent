@@ -1,20 +1,21 @@
 package com.tjzhic.servlet;
 
 import java.io.IOException;
-
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-
 import com.tjzhic.dao.AdminuserDao;
 import com.tjzhic.impl.AdminuserDaoImpl;
 import com.tjzhic.entity.Adminuser;
 import com.tjzhic.util.Encrypt;
 
 //@WebServlet(name = "AdminPass", urlPatterns = "/admin/pass.do")
+
+/**
+ * 管理员修改密码
+ */
 public class AdminPass extends HttpServlet {
 
     /**

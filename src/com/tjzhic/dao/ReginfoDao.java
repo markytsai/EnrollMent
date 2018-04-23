@@ -7,8 +7,11 @@ import com.tjzhic.entity.Major;
 import com.tjzhic.entity.Reginfo;
 
 public interface ReginfoDao {
+
+	// 添加注册信息
 	public int add(Reginfo reginfo);
 
+	// 根据用户名查找用户
 	public Reginfo findByUser(String username);
 
 	public Reginfo findByIdcode(String idcode);

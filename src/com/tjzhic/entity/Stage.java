@@ -1,11 +1,22 @@
 package com.tjzhic.entity;
 
 public class Stage {
-  private int stagenum;          //阶段编号
-  private String stagename;      //阶段名称
-  private String starttime;      //开始时间
-  private String endtime;        //结束时间
-  private String note;           //阶段说明
+  //阶段编号
+  private int stagenum;
+
+  //阶段名称
+  private String stagename;
+
+  //开始时间
+  private String starttime;
+
+  //结束时间
+  private String endtime;
+
+  //阶段说明
+  private String note;
+
+
   public int getStagenum() {
     return stagenum;
   }

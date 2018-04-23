@@ -1,10 +1,19 @@
 package com.tjzhic.entity;
 
 public class Adminuser {
-  private int adminid;      //管理员ID
-  private String adminname; //管理员名称
-  private String adminpass; //管理员密码
-  private String admingroup;     //管理员所属组
+  // 管理员ID
+  private int adminid;
+
+  // 管理员名称
+  private String adminname;
+
+  // 管理员密码
+  private String adminpass;
+
+  // 管理员所属组
+  private String admingroup;
+
+
   public int getAdminid() {
     return adminid;
   }
